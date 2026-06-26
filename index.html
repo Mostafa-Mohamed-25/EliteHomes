@@ -29,49 +29,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li
-              class="nav-item position-relative overflow-hidden me-4 mt-3 mt-lg-0"
+              class="nav-item position-relative overflow-hidden me-lg-4 mt-3 mt-lg-0"
             >
               <a
-                class="nav-link nav-link-color active"
+                class="nav-link nav-link-color p-3"
                 aria-current="page"
-                href="#"
+                href="#home"
                 >Home</a
               >
             </li>
-            <li
-              class="nav-item position-relative me-4 mt-3 mt-lg-0 dropdown"
-            >
-              <a
-                class="nav-link dropdown-toggle overflow-hidden"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Properties
-              </a>
+            <li class="nav-item position-relative me-lg-4 mt-3 mt-lg-0">
+              <a class="nav-link overflow-hidden p-3" href="#">
+                <input type="checkbox" class="d-none" id="chEck" />
+                <label for="chEck" class="checked">
+                  Properties
+                  <i class="fa-solid fa-angle-down ms-auto"></i> </label
+              ></a>
             </li>
             <li
-              class="nav-item position-relative overflow-hidden me-4 mt-3 mt-lg-0"
+              class="nav-item position-relative overflow-hidden me-lg-4 mt-3 mt-lg-0"
             >
-              <a class="nav-link nav-link-color" href="#Our-Services"
+              <a class="nav-link nav-link-color p-3" href="#Our-Services"
                 >Services</a
               >
             </li>
             <li
-              class="nav-item position-relative overflow-hidden me-4 mt-3 mt-lg-0"
+              class="nav-item position-relative overflow-hidden me-lg-4 mt-3 mt-lg-0"
             >
-              <a class="nav-link nav-link-color" href="#testimonials"
+              <a class="nav-link nav-link-color p-3" href="#testimonials"
                 >Testimonials</a
               >
             </li>
             <li
-              class="nav-item position-relative overflow-hidden me-4 mt-3 mt-lg-0"
+              class="nav-item position-relative overflow-hidden me-lg-4 my-3 mt-lg-0"
             >
-              <a class="nav-link nav-link-color" href="#FAQ">FAQ</a>
+              <a class="nav-link nav-link-color p-3" href="#FAQ">FAQ</a>
             </li>
             <li class="nav-item position-relative overflow-hidden">
-              <a class="nav-link nav-link-color" href="#Contact"> Contact</a>
+              <a class="nav-link nav-link-color p-3" href="#Contact">
+                Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -79,7 +76,7 @@
     </nav>
     <!-- **********************end nav**************************** -->
     <!-- **********************start header**************************** -->
-    <header class="">
+    <header id="home" class="">
       <div
         class="container-fluid container-md d-flex justify-content-center px-4"
       >
@@ -965,13 +962,12 @@
         <!-- CAROUSEL -->
         <div
           id="carouselExampleAutoplaying"
-          class="carousel slide mx-5"
+          class="carousel slide position-relative"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner overflow-hidden">
             <!-- 1 CARD  -->
-            <div class="carousel-item active">
-              m-0
+            <div class="carousel-item active m-0">
               <div class="CAed px-3">
                 <div class="inner bg-white rounded-3">
                   <div class="raTe mb-4 d-flex align-content-center">
@@ -1142,22 +1138,20 @@
             </div>
           </div>
           <button
-            class="carousel-control-prev d-none d-lg-inline-flex b-btn"
+            class="d-none d-lg-flex border-0 text-white justify-content-center align-items-center n-btn rounded-circle position-absolute b-btn"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <i class="fa-solid fa-angle-left"></i>
           </button>
           <button
-            class="carousel-control-next d-none d-lg-inline-flex n-btn"
+            class="d-none d-lg-flex border-0 text-white justify-content-center align-items-center n-btn rounded-circle position-absolute"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <i class="fa-solid fa-angle-right"></i>
           </button>
           <div class="carousel-indicators position-relative mt-4 mb-0 bTns">
             <button
@@ -1418,7 +1412,7 @@
     </section>
     <!-- **********************end sec 4**************************** -->
     <!-- **********************start sec 5**************************** -->
-    <section id="Contact">
+    <section id="Contact" class="position-relative overflow-hidden">
       <div class="container-fluid container-md px-4">
         <!-- sec header -->
         <div class="sec-header text-center">
@@ -1740,6 +1734,10 @@
           </div>
         </div>
       </div>
+      <div class="t-b-circle position-absolute rounded-circle"></div>
+      <div class="t-s-circle position-absolute rounded-circle"></div>
+      <div class="b-b-circle position-absolute rounded-circle"></div>
+      <div class="b-s-circle position-absolute rounded-circle"></div>
     </section>
     <!-- **********************end sec 5**************************** -->
     <footer class="py-5">

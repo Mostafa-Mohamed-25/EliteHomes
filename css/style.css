@@ -38,18 +38,45 @@ body {
 }
 /* *********start nav************** */
 nav .nav-item {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 nav .nav-item:hover {
-  background-color: #F5F3FF;
+  background-color: #f5f3ff;
 }
-nav .nav-item a{
-  transition: none .3s;
+nav .nav-item a {
+  transition: none 0.3s;
 }
-nav .nav-item:hover a{
+nav .nav-item:hover a {
   color: #7f22fe;
 }
+/* Properties btn */
+nav input:checked[type="checkbox"] ~ .checked i {
+  transform: rotate(180deg);
+}
 
+html:has(#Featured-Properties:target) a[href="#Featured-Properties"],
+html:has(#home:target) a[href="#home"],
+html:has(#Our-Services:target) a[href="#Our-Services"],
+html:has(#testimonials:target) a[href="#testimonials"],
+html:has(#FAQ:target) a[href="#FAQ"],
+html:has(#Contact:target) a[href="#Contact"] {
+  font-weight: bolder;
+  color: #7f22fe;
+}
+html:has(#Featured-Properties:target) a[href="#Featured-Properties"]::before,
+html:has(#Our-Services:target) a[href="#Our-Services"]::before,
+html:has(#FAQ:target) a[href="#FAQ"]::before,
+html:has(#home:target) a[href="#home"]::before,
+html:has(#testimonials:target) a[href="#testimonials"]::before,
+html:has(#Contact:target) a[href="#Contact"]::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* *********end nav************** */
 /* *********start header************** */
 header {
@@ -375,6 +402,7 @@ header .Stats .b-text {
   margin-bottom: 32px;
   font-size: 20px;
 }
+
 #testimonials .CAed .inner {
   padding: 32px;
 }
@@ -383,22 +411,20 @@ header .Stats .b-text {
   color: oklch(0.828 0.189 84.429);
 }
 /*  btns */
-#testimonials .b-btn span {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 12px;
+#testimonials .b-btn {
+  width: 42px;
+  height: 42px;
   position: absolute;
-  right: 150px;
+  top: 40%;
+  left: 5%;
   background-color: #ffffff33;
 }
-#testimonials .n-btn span {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 12px;
+#testimonials .n-btn {
+  width: 42px;
+  height: 42px;
   position: absolute;
-  left: 150px;
+  top: 40%;
+  right: 5%;
   background-color: #ffffff33;
 }
 
@@ -634,6 +660,37 @@ header .Stats .b-text {
 #Contact .The-Form .end-p {
   font-size: 14px;
   color: #6a7282;
+}
+/* circle */
+/* big circle */
+#Contact .t-b-circle,
+.b-b-circle {
+  width: 384px;
+  height: 384px;
+  background-color: #ede9fe;
+}
+#Contact .t-b-circle {
+  top: -10%;
+  right: -10%;
+}
+#Contact .b-b-circle {
+  bottom: -10%;
+  left: -10%;
+}
+/* small circle */
+#Contact .t-s-circle,
+.b-s-circle {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #ddd6ff;
+}
+#Contact .t-s-circle {
+  top: 4%;
+  right: 4%;
+}
+#Contact .b-s-circle {
+  bottom: 4%;
+  left: 4%;
 }
 
 /* *********end sec 5************** */
